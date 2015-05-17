@@ -9,16 +9,13 @@ class List
     @name = name
     @items = []
   end
+
+  def add_item(item)
+    items.push(Item.new(item))
+  end
 end
 
 list = List.new("Special")
-item = Item.new("Spice")
+list.add_item("Fuse")
 
 puts list.inspect
-puts item.inspect
-
-puts item
-item.mark_complete!
-puts item
-item.mark_incomplete!
-puts item
