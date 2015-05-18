@@ -40,6 +40,8 @@ class List
           puts item if item.complete?
         when "incomplete"
           puts item unless item.complete?
+        else
+          # type code here
       end
     end
     puts "\n"
