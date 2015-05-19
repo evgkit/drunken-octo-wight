@@ -1,8 +1,10 @@
 class SimpleBenchmark
   def run(description, &block)
+
     start_time = Time.now
     block.call
     end_time = Time.now
+
     puts "#{description} results"
     puts "Elapsed time: #{end_time - start_time}"
   end
